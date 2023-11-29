@@ -1,0 +1,118 @@
+{
+ "autoname": "REG.#####",
+ "creation": "2023-11-23 20:32:01.436529",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "index_no",
+  "email_address",
+  "student_contact_no",
+  "guardian_contact_no",
+  "col",
+  "mark_sheet",
+  "pass_certificate",
+  "cid",
+  "amended_from",
+  "status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "index_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Enter Your Class XII Index Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_contact_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Your Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guardian_contact_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Guardian Contact Number",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "col",
+   "fieldtype": "Heading",
+   "label": "Please upload the following document(s):"
+  },
+  {
+   "fieldname": "mark_sheet",
+   "fieldtype": "Attach",
+   "label": "Class XII Mark Sheet"
+  },
+  {
+   "fieldname": "pass_certificate",
+   "fieldtype": "Attach",
+   "label": "Class XII Pass Certificate"
+  },
+  {
+   "fieldname": "cid",
+   "fieldtype": "Attach",
+   "label": "Citizenship Identity Card"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Past Year List",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Form Status",
+   "options": "Pending\nIncomplete\nCompleted"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "in_create": 1,
+ "is_submittable": 1,
+ "modified": "2023-11-24 12:07:36.103246",
+ "modified_by": "Administrator",
+ "module": "Past Year Registration",
+ "name": "Past Year List",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
